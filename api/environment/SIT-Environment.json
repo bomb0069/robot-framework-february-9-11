@@ -1,0 +1,15 @@
+{
+	"id": "0cb45515-fe2f-4ef1-810f-d748ac5d9606",
+	"name": "SIT Environment",
+	"values": [
+		{
+			"key": "HOST",
+			"value": "https://sit.jsonplaceholder.typicode.com",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2022-02-11T08:28:41.408Z",
+	"_postman_exported_using": "Postman/9.13.0"
+}

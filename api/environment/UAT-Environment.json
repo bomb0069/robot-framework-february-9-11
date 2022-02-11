@@ -1,0 +1,15 @@
+{
+	"id": "f9f40542-e041-4458-b0b0-50df9f75de3e",
+	"name": "UAT Environment",
+	"values": [
+		{
+			"key": "HOST",
+			"value": "https://uat.jsonplaceholder.typicode.com",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2022-02-11T08:28:58.405Z",
+	"_postman_exported_using": "Postman/9.13.0"
+}
