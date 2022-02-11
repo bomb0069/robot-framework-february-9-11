@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.8.9 on darwin)" generated="20220211 10:30:58.968" rpa="false" schemaversion="2">
+<suite id="s1" name="Google-2" source="/Volumes/Data/lab/robot-framework/mitsu-2/google-2.robot">
+<test id="s1-t1" name="ค้นหาคำว่า 1112 ใน Google จะต้องเจอคำว่า 1112 The Pizza Company">
+<kw name="เปิด Chrome และ เข้า google.co.th">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://www.google.co.th</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220211 10:30:59.201" level="INFO">Opening browser 'chrome' to base url 'http://www.google.co.th'.</msg>
+<status status="PASS" starttime="20220211 10:30:59.201" endtime="20220211 10:31:02.343"/>
+</kw>
+<status status="PASS" starttime="20220211 10:30:59.200" endtime="20220211 10:31:02.344"/>
+</kw>
+<kw name="พิมพ์คำค้นหาว่า">
+<arg>1112</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>q</arg>
+<arg>${search text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220211 10:31:02.346" level="INFO">Typing text '1112' into text field 'q'.</msg>
+<status status="PASS" starttime="20220211 10:31:02.345" endtime="20220211 10:31:02.455"/>
+</kw>
+<status status="PASS" starttime="20220211 10:31:02.344" endtime="20220211 10:31:02.455"/>
+</kw>
+<kw name="กด Enter">
+<kw name="Press Key" library="SeleniumLibrary">
+<arg>q</arg>
+<arg>RETURN</arg>
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<msg timestamp="20220211 10:31:02.456" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20220211 10:31:02.455" endtime="20220211 10:31:02.494"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>ผลการค้นหาประมาณ</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220211 10:31:28.133" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220211 10:31:07.564" endtime="20220211 10:31:28.134"/>
+</kw>
+<msg timestamp="20220211 10:31:28.144" level="FAIL">Text 'ผลการค้นหาประมาณ' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20220211 10:31:02.494" endtime="20220211 10:31:28.144"/>
+</kw>
+<status status="FAIL" starttime="20220211 10:31:02.455" endtime="20220211 10:31:28.145"/>
+</kw>
+<kw name="ตรวจสอบผลลัพท์จะต้องเจอ">
+<arg>เดอะ พิซซ่า xxxxคอมปะนี 1112</arg>
+<status status="NOT RUN" starttime="20220211 10:31:28.146" endtime="20220211 10:31:28.146"/>
+</kw>
+<status status="FAIL" starttime="20220211 10:30:59.199" endtime="20220211 10:31:28.146">Text 'ผลการค้นหาประมาณ' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-t2" name="ค้นหาคำว่า บิตคอยน์ ใน google จะต้องเจอ Bitcoin is ...">
+<kw name="เปิด Chrome และ เข้า google.co.th">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://www.google.co.th</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220211 10:31:28.151" level="INFO">Opening browser 'chrome' to base url 'http://www.google.co.th'.</msg>
+<status status="PASS" starttime="20220211 10:31:28.151" endtime="20220211 10:31:31.454"/>
+</kw>
+<status status="PASS" starttime="20220211 10:31:28.150" endtime="20220211 10:31:31.454"/>
+</kw>
+<kw name="พิมพ์คำค้นหาว่า">
+<arg>บิตคอยน์</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>q</arg>
+<arg>${search text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220211 10:31:31.456" level="INFO">Typing text 'บิตคอยน์' into text field 'q'.</msg>
+<status status="PASS" starttime="20220211 10:31:31.455" endtime="20220211 10:31:31.577"/>
+</kw>
+<status status="PASS" starttime="20220211 10:31:31.454" endtime="20220211 10:31:31.578"/>
+</kw>
+<kw name="กด Enter">
+<kw name="Press Key" library="SeleniumLibrary">
+<arg>q</arg>
+<arg>RETURN</arg>
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<msg timestamp="20220211 10:31:31.578" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20220211 10:31:31.578" endtime="20220211 10:31:31.618"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>ผลการค้นหาประมาณ</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220211 10:31:36.787" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220211 10:31:36.688" endtime="20220211 10:31:36.787"/>
+</kw>
+<msg timestamp="20220211 10:31:36.788" level="FAIL">Text 'ผลการค้นหาประมาณ' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20220211 10:31:31.618" endtime="20220211 10:31:36.788"/>
+</kw>
+<status status="FAIL" starttime="20220211 10:31:31.578" endtime="20220211 10:31:36.788"/>
+</kw>
+<kw name="ตรวจสอบผลลัพท์จะต้องเจอ">
+<arg>บิตคอยน์ เป็นคริปโทเคอร์เรนซี</arg>
+<status status="NOT RUN" starttime="20220211 10:31:36.788" endtime="20220211 10:31:36.789"/>
+</kw>
+<status status="FAIL" starttime="20220211 10:31:28.147" endtime="20220211 10:31:36.789">Text 'ผลการค้นหาประมาณ' did not appear in 5 seconds.</status>
+</test>
+<status status="FAIL" starttime="20220211 10:30:58.970" endtime="20220211 10:31:36.790"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="Google-2">Google-2</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220211 10:31:02.456" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<msg timestamp="20220211 10:31:31.578" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+</errors>
+</robot>
